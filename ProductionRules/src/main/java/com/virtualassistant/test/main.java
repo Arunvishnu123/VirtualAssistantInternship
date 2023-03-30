@@ -18,7 +18,7 @@ public class main {
 			aeroplane.setFuelLevel(40.0F);
 			aeroplane.setRequiredLandingDistance(4000);
 			FactHandle factHandler;
-			factHandler = kSession.insert(aeroplane);
+			kSession.insert(aeroplane);
 			kSession.fireAllRules();
 
 
@@ -32,6 +32,8 @@ public class main {
 			runway1.setName("T2");
 			runway1.setRunwayDistance(3800);
 			airport.setRunway(runway);
+
+		   kSession.insert(airport);
 
 
 			System.out.println(aeroplane.getFuelLevel());
