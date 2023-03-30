@@ -1,6 +1,5 @@
 from ortools.sat.python import cp_model
 
-
 def main():
     # Data
     airportDistanceMatrix = [[10000, 800, 900, 1100, 10000, 10000, 10000, 10000, 10000],

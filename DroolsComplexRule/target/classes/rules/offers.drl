@@ -1,0 +1,16 @@
+package rules
+
+
+import com.virtualassistant.test.Aeroplane
+
+rule "check fuel level"
+   when
+        checkstyleLevel: Aeroplane(fuelLevel < 90.0)
+   then
+         System.out.println("Fuel level is less");
+   end
+
+	
+	
+	 
+

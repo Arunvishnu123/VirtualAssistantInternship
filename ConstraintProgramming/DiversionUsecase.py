@@ -50,6 +50,6 @@ if status == cp_model.OPTIMAL:
     for i in selected:
         for j in graph:
             if i == j["runwayDistance"]:
-                print(f"Available runways {j}")
+                print(f"Available runways - {j}")
 else:
     print("No solution found.")
