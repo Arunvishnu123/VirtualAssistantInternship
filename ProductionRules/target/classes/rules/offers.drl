@@ -1,21 +1,13 @@
 package rules
 
-
 import com.virtualassistant.test.Aeroplane
 import com.virtualassistant.test.Airport
 
 rule "check fuel level"
    when
         aeroplane: Aeroplane(fuelLevel < 50.0)
-        $airport: Airport()
+
    then
-        System.out.println("Fuel level is less");
-         System.out.println($airport.getName());
+         System.out.println("Fuel level is less");
+
    end
-
-
-
-	
-	
-	 
-

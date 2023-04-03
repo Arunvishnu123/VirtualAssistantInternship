@@ -11,7 +11,7 @@ public class main {
 		try {
 			KieServices ks = KieServices.Factory.get();
 			KieContainer kContainer = ks.getKieClasspathContainer();
-			KieSession kSession = kContainer.newKieSession("first-ksession-rule");
+			KieSession kSession = kContainer.newKieSession("diversion-rule");
 
 			Aeroplane aeroplane =new Aeroplane();
 			aeroplane.setFlightName("A01");
